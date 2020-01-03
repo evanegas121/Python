@@ -1,0 +1,32 @@
+#ELizabeth VAnegas
+# November 1
+#This print complementary code
+
+
+
+def makeCompDNA(strandDNA):
+     compDNA = ""
+     for base in strandDNA:
+          if base == "A":
+               compDNA = compDNA + "T"
+          elif base == "C":
+               compDNA = compDNA + "G"
+          elif base == "G":
+               compDNA = compDNA + "C"
+          elif base == "T":
+               compDNA = compDNA + "A"
+     return(compDNA)
+
+
+
+def main():
+     strandDNA = input('Enter DNA strand: ')
+     compDNA = makeCompDNA(strandDNA)
+     print('The complentary strand is', compDNA)
+
+
+
+#Allow script to be run directly:
+if __name__ == "__main__":
+     main()
+                   
